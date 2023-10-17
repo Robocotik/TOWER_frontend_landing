@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montaga&family=Montserrat:wght@500&family=Work+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size:18px;
+    font-family: Work Sans, sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+header{
+    height:80px;
+}
+
+
+
+header ul{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    /* border: 2px solid red; */
+    gap:50px;
+    margin-right: 112px;
+    height: 100%;
+}
+
+
+header ul li{
+    margin: 0;
+}
+
+
+header ul li:nth-child(2){
+    margin:auto;
+}
+
+
+header ul li a.underline_hover{
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+header ul li a.underline_hover:hover{
+    background-size: 100% 2px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer div{
+    display: flex;
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.orange{
+    color:orange;
+    font-weight: 600;
+}
+
+
+.footer_main_text{
+    font-weight: 700;
+    font-size: 2rem;
+
+
+}
+.footer_desc_text{
+    font-weight: 400;
+    font-size: 20px;
+
+}
+
+.main_main_text{
+    font-weight: 600;
+    font-size: 48px;
+}
+
+.logo_text{
+    font-style: italic;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    cursor:default;
+    margin-left: 5px;
+    color: rgba(41, 71, 169, 1);
+    /* border: 2px solid green;     */
+    align-items: center;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+.logo_pic{
+    align-items: center;
+    display: flex;
+    
+}
+
+.main_photo_block{
+    min-width: 100%;  
+    height: 646px;
+
+}
+.logo_block{
+    margin-left: 6vw;
+}
+
+.main_photo_text{
+    line-height: 84px;
+    font-weight: 600;
+    font-size: 72px;
+    position: absolute;
+    margin-left: 15%;     
+    top:30%;
+}
+.main_photo_block img{
+    
+    width: 100%;
+    height: 646px;
+    object-fit:cover;
+    object-position: center center;
+    
+}
+
+.main_photo_block img::after{
+    content: "";
+	display: block;    
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;      
+	left: 0;   
+	background: transparent;
+	background-image: linear-gradient(to left, #11de93, #0e7ad6);
+	opacity: 0.8;
+}
+
+.scroll_menu{
+    background-color: #0e7ad6;
+    width: 30%;
+    height: 20%;
+    position:absolute;
+    bottom:0%;
+    right:0;
+}
+
+.arrow{
+    background-color: #0e7ad6;
+    color:#0e7ad6;
+    height:20px;
+    width: 20px;
+}
