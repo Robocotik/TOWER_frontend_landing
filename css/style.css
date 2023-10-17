@@ -214,6 +214,7 @@ main{
 }
 
 .scroll_menu_move{
+    background-color:rgba(41, 46, 61, 1);
     display: flex;
     flex-direction: row;
     justify-content: center;
