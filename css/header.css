@@ -1,0 +1,115 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montaga&family=Montserrat:wght@500&family=Work+Sans&display=swap');
+
+
+:root{
+    --var-wrg: 245;
+    --neutral-800: #292E3D;
+    --neutral-100: #E0E3EB;
+    --neutral-200: #C2C7D6;
+    --Primary: #2947A9;
+    --neutral-white: #FFF;
+    --neutral-50: #F6F8F7;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-size:18px;
+    font-style: normal;
+    font-family: Work Sans, sans-serif;
+    font-weight: 400;
+    line-height: normal;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    user-select: none;
+    
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+header{
+    height:80px;
+}
+
+
+
+header ul{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    /* border: 2px solid red; */
+    gap:50px;
+    margin-right: 112px;
+    height: 100%;
+}
+
+
+header ul li{
+    margin: 0;
+}
+
+
+header ul li:nth-child(2){
+    margin:auto;
+}
+
+
+header ul li a.underline_hover{
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+header ul li a.underline_hover:hover{
+    background-size: 100% 2px;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.orange{
+    color:orange;
+    font-weight: 600;
+}
+
+
+.logo_text{
+    font-style: italic;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    cursor:default;
+    margin-left: 5px;
+    color: rgba(41, 71, 169, 1);
+    /* border: 2px solid green;     */
+    align-items: center;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+.logo_pic{
+    align-items: center;
+    display: flex;
+    
+}
+
+
+.logo_block{
+    margin-left: 6vw;
+}

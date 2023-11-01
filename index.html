@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
@@ -48,14 +50,14 @@
             <img src="./pictures/main_photo_background.jpeg" alt="">            
          </section>
         <section class = "task_block">
-            <p class = "main_main_text" style >Try it by yourself!</p>
+            <p class = "main_main_text" >Try it by yourself!</p>
 
-            <div  class = "my_tasks" style = "border: 2px solid purple;">
+            <div  class = "my_tasks">
                 <p class = "add_tasks_text">my tasks</p>
-                <div class = "add_task_block" style = "border: 2px solid red;">
-                    <input type="text" class = "new_task_textform" id="input_name" placeholder="New task" />
-                    <div class = priority>
-                        <input type="" class="priority_textform" placeholder="Priority" id="input_priority_box">
+                <div class = "add_task_block">
+                    <input type="text" class = "form new_task_textform" id="input_name" placeholder="New task" />
+                    <div class = "form priority">
+                        <input type="" class="form priority_textform" placeholder="Priority" id="input_priority_box">
                         <div class="dropdown-content">
                             <div class="dropdown-level">
                                 <input type="radio" id="input_priority_1" name = "add_block" value = "priority_1"/>
@@ -81,15 +83,15 @@
                 
                 <div class = "ready_tasks">
                     
-                    <div class = "task_element">
+                    <div class = "form task_element">
                         <div class = "circle blue"></div>
                         <p>Task 1</p>
                     </div>
-                    <div class = "task_element">
+                    <div class = "form task_element">
                         <div class = "circle green"></div>
                         <p>Task 2</p>
                     </div>
-                    <div class = "task_element">
+                    <div class = "form task_element">
                         <div class = "circle red"></div>
                         <p>Task 3</p>
 
@@ -102,9 +104,16 @@
     </main>
     <footer>
         <div ><p class = "footer_main_text">What can i do for you?</p></div>
-        <div ><p class = "footer_desc_text">We are ready to work on a project of any complexity, whether it’s commercial or residential.</p></div>
-    
-
+        <div ><p class = "footer_desc_text">We are ready to work on a project of any complexity,<br> whether it’s commercial or residential.</p></div>
+        <div>
+            <input  type="text" placeholder="Name" class = "form footer_nameform">
+            <input  type="email" placeholder="Email" class = "form footer_emailform">
+        </div>
+        <input type="text" name="" class = "form footer_messageform" placeholder="Message">
+        <div class = "submit">Submit</div>
+        <div class = "company_block">
+            <p class="company_block_text">TheManager © 2023. All Rights Reserved</p>
+        </div>
     </footer>
     <script src="./js/main.js"></script>
     
