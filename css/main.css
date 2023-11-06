@@ -265,7 +265,9 @@ main{
 
 .task__element:active{
     background: var(--neutral-100);
+
 }
+
 
 .task__element p{
     width:100%;

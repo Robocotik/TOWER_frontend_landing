@@ -1,5 +1,5 @@
-function validate()
+function lineThrowing()
 {
-    const selected = document.querySelectorAll('input[name="add__block"]');
-    console.log(selected);
+    console.log(this)
+    this.style.textDecoration = "line-through"
 }
