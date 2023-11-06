@@ -61,7 +61,7 @@ header ul li:nth-child(2){
 }
 
 
-header ul li a.underline_hover{
+header ul li a.underline__hover{
     text-decoration: none;
     background-image: linear-gradient(currentColor, currentColor);
     background-position: 0% 100%;
@@ -70,7 +70,7 @@ header ul li a.underline_hover{
     transition: background-size .3s;
 }
 
-header ul li a.underline_hover:hover{
+header ul li a.underline__hover:hover{
     background-size: 100% 2px;
 }
 
@@ -89,7 +89,7 @@ main{
 }
 
 
-.logo_text{
+.logo__text{
     font-style: italic;
     font-weight: 700;
     font-size: 30px;
@@ -103,13 +103,13 @@ main{
     align-items: center;
     user-select: none;
 }
-.logo_pic{
+.logo__pic{
     align-items: center;
     display: flex;
     
 }
 
 
-.logo_block{
+.logo__block{
     margin-left: 6vw;
 }

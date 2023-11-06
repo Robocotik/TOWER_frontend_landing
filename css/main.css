@@ -7,7 +7,7 @@ main{
 }
 
 
-.main_main_text{
+.main__main__text{
     font-weight: 600;
     font-size: 48px;
     height: 200px ;
@@ -17,14 +17,14 @@ main{
     width: 100%;
 }
 
-.main_photo_block{
+.main__photo__block{
     min-width: 100%;  
     height: 646px;
 
 }
 
 
-.main_photo_text{
+.main__photo__text{
     line-height: 84px;
     font-weight: 600;
     font-size: 72px;
@@ -32,7 +32,7 @@ main{
     margin-left:20%;     
     top:30%;
 }
-.main_photo_block img{
+.main__photo__block img{
     width: 100%;
     object-fit:cover;
     object-position: center center;
@@ -41,7 +41,7 @@ main{
     
 }
 
-.main_photo_block{
+.main__photo__block{
     max-height:648px;
     width: 100%;
     position: relative;
@@ -50,7 +50,7 @@ main{
     
 }
 
-.scroll_menu{
+.scroll__menu{
     
     background-color: #0e7ad6;
     width: 25%;
@@ -76,7 +76,7 @@ main{
    
 }
 
-.scroll_main_text{
+.scroll__main__text{
     display: flex;
     color:rgba(255, 255, 255, 1);
     font-weight: 700;
@@ -88,7 +88,7 @@ main{
   
 }
 
-.scroll_desc_text{
+.scroll__desc__text{
     display: flex;
     color:rgba(255, 255, 255, 1);
     font-size: 24px;
@@ -97,7 +97,7 @@ main{
     justify-content: center
     
 }
-.scroll_move_text{
+.scroll__move__text{
     
     display: flex;
     color:rgba(255, 255, 255, 1);
@@ -107,7 +107,7 @@ main{
     
 }
 
-.scroll_menu_move{
+.scroll__menu__move{
     background-color:rgba(41, 46, 61, 1);
     display: flex;
     flex-direction: row;
@@ -115,7 +115,7 @@ main{
     margin-bottom: 0;
 }
 
-.scroll_back_block{
+.scroll__back__block{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -123,8 +123,14 @@ main{
     width: 50%;
     gap: 10px;
     border-right: 2px solid white;
+    background-color: rgba(41, 46, 61, 1);
 }
-.scroll_next_block{
+
+.scroll__back__block:hover{
+    background-color: #243B86;;
+}
+
+.scroll__next__block{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -132,13 +138,19 @@ main{
     width: 50%;
     gap: 10px;
     border-left: 2px solid white;
+    background-color: rgba(41, 46, 61, 1);
 }
-.task_block{
+
+.scroll__next__block:hover{
+    background-color: #243B86;;
+}
+
+.task__block{
     display: flex; 
     flex-direction: column;
 }
 
-.add_task_block{
+.add__task__block{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -148,7 +160,7 @@ main{
 
 }
 
-.add_tasks_text{
+.add__tasks__text{
     margin-top: 11px;
     font-size: 36px;
     font-weight: 600;
@@ -161,11 +173,11 @@ main{
     height: 40px;
 }
 
-.ready_tasks{
+.ready__tasks{
     min-height: 400px;
 }
 
-.my_tasks{
+.my__tasks{
     display: flex;  
     flex-direction: column;
     align-items: center;
@@ -181,6 +193,7 @@ main{
 .priority{
     display: flex;
     flex-direction: row;
+    position: relative;
     padding: 10px 8px;
     height: 100%;
     width: 109px;
@@ -194,6 +207,7 @@ main{
     background-color: #f1f1f1;
     min-width: 160px;
     z-index: 1;
+
   }
   
 .dropdown-content .dropdown-level {
@@ -204,22 +218,28 @@ main{
   }
   
 .dropdown-content .dropdown-level:hover {
-    background-color: #ddd
+    background-color: var(--neutral-50);
   }
   
 .priority:hover .dropdown-content {
     display: block;
+    position: absolute;
+    top:40px;
+    left:-25px;
+    border-radius: 4px;
+    border: 1px solid var(--neutral-100);
+    background: #FFF;
+    transition: 5s;
+    
   }
   
 .btn{
     width: 20px;
     height: 20px;
+    display: flex;
 }  
-.btn:hover, .priority:hover .btn {
-    background-color: #0b7dda;
-  }
 
-.ready_tasks{
+.ready__tasks{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -229,7 +249,7 @@ main{
     align-items: center;
   }
 
-.task_element{
+.task__element{
     display: flex;
     width: 100%;
     height: 40px;
@@ -239,8 +259,15 @@ main{
     padding: 10px;
     gap:10px;
 }
+.task__element:hover{
+    background: var(--neutral-200);
+}
 
-.task_element p{
+.task__element:active{
+    background: var(--neutral-100);
+}
+
+.task__element p{
     width:100%;
     
 
@@ -268,21 +295,23 @@ main{
     border: 1px solid var(--neutral-100);
     background: #FFF;
 }
-.new_task_textform{
+.new__task__textform{
     width: 251px;
     height: 100%;
     padding: 10px 8px;
-
+    
 }
 
-.priority_textform{
+.priority__textform{
     width: 100%;
-    height: 100%;
-    padding: 10px 8px;
+    height: auto;
+    border:0;
+    font-size: 18px;
+    
 
 }
 
-.button_add{
+.button__add{
     color: #FFF;
     padding: 9px 25px 10px 24px;
     justify-content: center;
@@ -295,7 +324,7 @@ main{
     background: var(--Primary);
 }
 
-.button_add:hover{
+.button__add:hover{
     scale: 1.05;
     background: #243B86;
 }
