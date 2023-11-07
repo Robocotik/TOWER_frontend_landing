@@ -1,17 +1,30 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Montaga&family=Montserrat:wght@500&family=Work+Sans&display=swap');
 
+
+:root{
+    --var-wrg: 245;
+    --neutral-800: #292E3D;
+    --neutral-100: #E0E3EB;
+    --neutral-200: #C2C7D6;
+    --Primary: #2947A9;
+    --neutral-white: #FFF;
+    --neutral-50: #F6F8F7;
+}
 *{
     margin: 0;
     padding: 0;
     font-size:18px;
+    font-style: normal;
     font-family: Work Sans, sans-serif;
     font-weight: 400;
-    line-height: 21px;
+    line-height: normal;
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
     user-select: none;
+    
 }
 
 body{
@@ -48,7 +61,7 @@ header ul li:nth-child(2){
 }
 
 
-header ul li a.underline_hover{
+header ul li a.underline__hover{
     text-decoration: none;
     background-image: linear-gradient(currentColor, currentColor);
     background-position: 0% 100%;
@@ -57,22 +70,10 @@ header ul li a.underline_hover{
     transition: background-size .3s;
 }
 
-header ul li a.underline_hover:hover{
+header ul li a.underline__hover:hover{
     background-size: 100% 2px;
 }
 
-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-footer div{
-    display: flex;
-
-}
 
 main{
     display: flex;
@@ -81,30 +82,14 @@ main{
     align-items: center;
 }
 
+
 .orange{
     color:orange;
     font-weight: 600;
 }
 
 
-.footer_main_text{
-    font-weight: 700;
-    font-size: 2rem;
-
-
-}
-.footer_desc_text{
-    font-weight: 400;
-    font-size: 20px;
-
-}
-
-.main_main_text{
-    font-weight: 600;
-    font-size: 48px;
-}
-
-.logo_text{
+.logo__text{
     font-style: italic;
     font-weight: 700;
     font-size: 30px;
@@ -118,63 +103,13 @@ main{
     align-items: center;
     user-select: none;
 }
-.logo_pic{
+.logo__pic{
     align-items: center;
     display: flex;
     
 }
 
-.main_photo_block{
-    min-width: 100%;  
-    height: 646px;
 
-}
-.logo_block{
+.logo__block{
     margin-left: 6vw;
-}
-
-.main_photo_text{
-    line-height: 84px;
-    font-weight: 600;
-    font-size: 72px;
-    position: absolute;
-    margin-left: 15%;     
-    top:30%;
-}
-.main_photo_block img{
-    
-    width: 100%;
-    height: 646px;
-    object-fit:cover;
-    object-position: center center;
-    
-}
-
-.main_photo_block img::after{
-    content: "";
-	display: block;    
-	width: 100%;
-	height: 100%;    
-	position: absolute;
-	top: 0;      
-	left: 0;   
-	background: transparent;
-	background-image: linear-gradient(to left, #11de93, #0e7ad6);
-	opacity: 0.8;
-}
-
-.scroll_menu{
-    background-color: #0e7ad6;
-    width: 30%;
-    height: 20%;
-    position:absolute;
-    bottom:0%;
-    right:0;
-}
-
-.arrow{
-    background-color: #0e7ad6;
-    color:#0e7ad6;
-    height:20px;
-    width: 20px;
 }
